@@ -1,0 +1,12 @@
+
+TSC_ROOT= ../..     			#the root of project
+TEMPLATE=app					#output type: app、lib(.a)、so(.dll)
+TARGET = tsc_test				#output name
+SOURCES = main.c test.s			#source file
+DEFINE =						#marco  definition
+CFLAGS =						#compiler options
+LDFLAGS =						#link options
+LIBS = 							#
+include $(TSC_ROOT)/src/mk/dpdk_linux.mk
+include $(TSC_ROOT)/src/mk/common.mk
+
